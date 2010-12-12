@@ -10,6 +10,7 @@ import javax.swing.JMenuItem;
 import javax.swing.JSeparator;
 import javax.swing.JTabbedPane;
 import javax.swing.KeyStroke;
+import javax.swing.UIManager;
 import javax.swing.WindowConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -66,6 +67,8 @@ public class VentanaPpal extends javax.swing.JFrame implements
 	
 	private void initGUI() {
 		try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+			UIManager.put("AuditoryCues.playList", UIManager.get("AuditoryCues.allAuditoryCues") );
 			setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 			this.setTitle("EL-Qplanif: Simulador de algoritmos de Planificaciòn");
 			this.setPreferredSize(new java.awt.Dimension(700, 540));
