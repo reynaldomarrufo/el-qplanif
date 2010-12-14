@@ -3,6 +3,7 @@ package view;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -35,6 +36,7 @@ public class VentanaPpal extends javax.swing.JFrame implements
 	private Simulador modelo;
 	private JMenuBar jMenuBar1;
 	private JLabel estadoLabel;
+	private JSeparator jSeparator3;
 	private JTabbedPane tab;
 	private JMenuItem acercaMenuItem;
 	private JSeparator jSeparator2;
@@ -105,9 +107,14 @@ public class VentanaPpal extends javax.swing.JFrame implements
 						nuevoMenuItem = new JMenuItem();
 						jMenu1.add(nuevoMenuItem);
 						nuevoMenuItem.setText("Nueva Ventana");
+						nuevoMenuItem.setIcon(new ImageIcon(getClass().getClassLoader().getResource("recursos/imag/add.png")));
 						nuevoMenuItem.setAccelerator(KeyStroke.getKeyStroke(
 								java.awt.event.KeyEvent.VK_N,
 								java.awt.event.InputEvent.CTRL_DOWN_MASK));
+					}
+					{
+						jSeparator3 = new JSeparator();
+						jMenu1.add(jSeparator3);
 					}
 					{
 						cargarMenuItem = new JMenuItem();
@@ -126,6 +133,7 @@ public class VentanaPpal extends javax.swing.JFrame implements
 						salirMenuItem = new JMenuItem();
 						jMenu1.add(salirMenuItem);
 						salirMenuItem.setText("Salir");
+						salirMenuItem.setIcon(new ImageIcon(getClass().getClassLoader().getResource("recursos/imag/shutdown.png")));
 						salirMenuItem.addActionListener(this);
 						salirMenuItem.setAccelerator(KeyStroke.getKeyStroke(
 								java.awt.event.KeyEvent.VK_Q,
@@ -143,6 +151,7 @@ public class VentanaPpal extends javax.swing.JFrame implements
 						ayudaMenuItem = new JMenuItem();
 						jMenu3.add(ayudaMenuItem);
 						ayudaMenuItem.setText("Ver la ayuda");
+						ayudaMenuItem.setIcon(new ImageIcon(getClass().getClassLoader().getResource("recursos/imag/Help.png")));
 												ayudaMenuItem.addActionListener(this);
 						ayudaMenuItem.setAccelerator(KeyStroke.getKeyStroke(
 								java.awt.event.KeyEvent.VK_F1,
@@ -156,6 +165,7 @@ public class VentanaPpal extends javax.swing.JFrame implements
 						acercaMenuItem = new JMenuItem();
 						jMenu3.add(acercaMenuItem);
 						acercaMenuItem.setText("Acerca de");	
+						acercaMenuItem.setIcon(new ImageIcon(getClass().getClassLoader().getResource("recursos/imag/about.png")));
 						acercaMenuItem.addActionListener(this);
 						
 						

@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 import java.util.Vector;
 import javax.swing.BorderFactory;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.WindowConstants;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPanel;
@@ -187,21 +186,24 @@ public class PanelProcesos extends javax.swing.JPanel implements ActionListener,
 				nueButton = new JButton();
 				this.add(nueButton);
 				nueButton.setText("Nuevo");
-				nueButton.setBounds(17, 310, 80, 30);
+				nueButton.setBounds(17, 310, 100, 30);
+				nueButton.setIcon(new ImageIcon(getClass().getClassLoader().getResource("recursos/imag/add_over.png")));
 				nueButton.addActionListener(this);
 			}
 			{
 				elimButton = new JButton();
 				this.add(elimButton);
 				elimButton.setText("Eliminar");
-				elimButton.setBounds(179, 310, 80, 30);
+				elimButton.setBounds(179, 310, 100, 30);
+				elimButton.setIcon(new ImageIcon(getClass().getClassLoader().getResource("recursos/imag/close_mini.png")));
 				elimButton.addActionListener(this);
 			}
 			{
 				editButton = new JButton();
 				this.add(editButton);
 				editButton.setText("Editar");
-				editButton.setBounds(402, 310, 80, 30);
+				editButton.setBounds(402, 310, 100, 30);
+				editButton.setIcon(new ImageIcon(getClass().getClassLoader().getResource("recursos/imag/reload_mini.png")));
 				editButton.addActionListener(this);
 			}
 			{
@@ -210,6 +212,7 @@ public class PanelProcesos extends javax.swing.JPanel implements ActionListener,
 				simuButton.setText("Simular");
 				simuButton.setBounds(226, 351, 170, 45);
 				simuButton.setFont(new java.awt.Font("Segoe UI",1,24));
+				simuButton.setIcon(new ImageIcon(getClass().getClassLoader().getResource("recursos/imag/ok.png")));
 				simuButton.addActionListener(this);
 			}
 			} catch (Exception e) {

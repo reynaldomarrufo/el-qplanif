@@ -5,6 +5,7 @@ import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -113,14 +114,15 @@ public class Acercade extends javax.swing.JDialog implements ActionListener {
 				aceptarButton = new JButton();
 				getContentPane().add(aceptarButton);
 				aceptarButton.setText("Aceptar");
-				aceptarButton.setBounds(333, 168, 114, 38);
+				aceptarButton.setBounds(282, 168, 155, 38);
 				aceptarButton.addActionListener(this);
 			}
 			{
 				verLButton = new JButton();
 				getContentPane().add(verLButton);
 				verLButton.setText("Ver Licencia");
-				verLButton.setBounds(39, 168, 107, 37);
+				verLButton.setBounds(39, 168, 155, 38);
+				verLButton.setIcon(new ImageIcon(getClass().getClassLoader().getResource("recursos/imag/Keys.png")));
 				verLButton.addActionListener(this);
 			}
 			
