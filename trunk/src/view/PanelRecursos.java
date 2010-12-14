@@ -3,9 +3,9 @@ package view;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Vector;
-
 import javax.swing.BorderFactory;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JList;
@@ -23,6 +23,19 @@ import escuchadores.SimuladorRecursosListener;
 import global.Mensajes;
 
 
+
+/**
+* This code was edited or generated using CloudGarden's Jigloo
+* SWT/Swing GUI Builder, which is free for non-commercial
+* use. If Jigloo is being used commercially (ie, by a corporation,
+* company or business for any purpose whatever) then you
+* should purchase a license for each developer using Jigloo.
+* Please visit www.cloudgarden.com for details.
+* Use of Jigloo implies acceptance of these licensing terms.
+* A COMMERCIAL LICENSE HAS NOT BEEN PURCHASED FOR
+* THIS MACHINE, SO JIGLOO OR THIS CODE CANNOT BE USED
+* LEGALLY FOR ANY CORPORATE OR COMMERCIAL PURPOSE.
+*/
 public class PanelRecursos extends javax.swing.JPanel implements ActionListener,SimuladorRecursosListener,SimuladorListener {
 	private JScrollPane jScrollPane1;
 	private JButton editButton;
@@ -120,21 +133,24 @@ public class PanelRecursos extends javax.swing.JPanel implements ActionListener,
 				NueButton = new JButton();
 				this.add(NueButton);
 				NueButton.setText("Nuevo");
-				NueButton.setBounds(17, 310, 80,30);
+				NueButton.setBounds(17, 310, 100,30);
+				NueButton.setIcon(new ImageIcon(getClass().getClassLoader().getResource("recursos/imag/add_over.png")));
 				NueButton.addActionListener(this);
 			}
 			{
 				eliButton = new JButton();
 				this.add(eliButton);
 				eliButton.setText("Eliminar");
-				eliButton.setBounds(176, 310, 80, 30);
+				eliButton.setBounds(176, 310, 100, 30);
+				eliButton.setIcon(new ImageIcon(getClass().getClassLoader().getResource("recursos/imag/close_mini.png")));
 				eliButton.addActionListener(this);
 			}
 			{
 				editButton = new JButton();
 				this.add(editButton);
 				editButton.setText("Editar");
-				editButton.setBounds(400, 127, 80, 30);
+				editButton.setBounds(400, 127, 100, 30);
+				editButton.setIcon(new ImageIcon(getClass().getClassLoader().getResource("recursos/imag/reload_mini.png")));
 				editButton.addActionListener(this);
 			}
 		} catch (Exception e) {

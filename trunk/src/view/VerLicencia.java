@@ -4,6 +4,19 @@ import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 
 
+
+/**
+* This code was edited or generated using CloudGarden's Jigloo
+* SWT/Swing GUI Builder, which is free for non-commercial
+* use. If Jigloo is being used commercially (ie, by a corporation,
+* company or business for any purpose whatever) then you
+* should purchase a license for each developer using Jigloo.
+* Please visit www.cloudgarden.com for details.
+* Use of Jigloo implies acceptance of these licensing terms.
+* A COMMERCIAL LICENSE HAS NOT BEEN PURCHASED FOR
+* THIS MACHINE, SO JIGLOO OR THIS CODE CANNOT BE USED
+* LEGALLY FOR ANY CORPORATE OR COMMERCIAL PURPOSE.
+*/
 public class VerLicencia extends javax.swing.JDialog {
 	private JScrollPane jScrollPane1;
 	private JLabel licLabel;
@@ -20,16 +33,17 @@ public class VerLicencia extends javax.swing.JDialog {
 	
 	private void initGUI() {
 		try {
-			this.setPreferredSize(new java.awt.Dimension(415, 490));
+			this.setPreferredSize(new java.awt.Dimension(390, 470));
 			this.setLayout(null);
-			this.setSize(415, 490);
+			this.setSize(420, 483);
 			this.setTitle("Licencia de EL-QPlanif");
+			this.setResizable(false);
 			
 			{
 				
 				jScrollPane1 = new JScrollPane();
 				this.add(jScrollPane1);
-				jScrollPane1.setBounds(12, 21, 376, 419);
+				jScrollPane1.setBounds(5, 10, 376, 419);
 				{
 					licLabel = new JLabel();
 					jScrollPane1.setViewportView(licLabel);
